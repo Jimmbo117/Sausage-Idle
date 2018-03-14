@@ -13,46 +13,27 @@ namespace WindowsFormsApp1
     public partial class SausageIdle : Form
     {
         double SausageBank = 0;
-        double KetchupSum = 0;
+        int KetchupSum = 0;
         double KetchupPrice = 10;
         double KetchupThousands = 0;
-        double MustardSum = 0;
+        int MustardSum = 0;
         double MustardPrice = 100;
         double MustardThousands = 0;
         double SausagePerSec = 0;
         double OneThousand = 1000;
-        double ClickValue = 1;
+        int ClickValue = 1;
         double Passive1Price = 1000;
         double Passive1Thousands = 0;
         int SecsLeft = 0;
-        bool SaveExists = false;
         //string Save = "";
 
         public SausageIdle()
         {
             InitializeComponent();
             DisplaySausagesPerSec.Text = "0";
-            var appdata = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            SaveExists = (System.IO.File.Exists(appdata+"\\Testfile.txt") ? true : false);
-            if (SaveExists == true)
-            {
-                 string[] SaveData = System.IO.File.ReadAllLines(@appdata + "\\Testfile.txt");
-                double[] LoadedData = Array.ConvertAll(SaveData, new Converter<string, double>(Double.Parse));
-                 SausageBank = LoadedData[0];
-                 KetchupSum = LoadedData[1];
-                 KetchupPrice = LoadedData[2];
-                 KetchupThousands = LoadedData[3];
-                 MustardSum = LoadedData[4];
-                 MustardPrice = LoadedData[5];
-                 MustardThousands = LoadedData[6];
-                 SausagePerSec = LoadedData[7];
-                 ClickValue = LoadedData[8];
-                 Passive1Price = LoadedData[9];
-                 Passive1Thousands = LoadedData[10];
-            }
-            //DisplayKetchupPrice.Text = KetchupPrice.ToString("0");
-            // FixedText1.Text = UpgradeKetchup.BackColor.ToString();
-            // AutoclickSkill.BackColor = Color.Blue;
+            DisplayKetchupPrice.Text = KetchupPrice.ToString("0");
+           // FixedText1.Text = UpgradeKetchup.BackColor.ToString();
+           // AutoclickSkill.BackColor = Color.Blue;
         }
         private void SausagePlus_Click(object sender, EventArgs e)
         {
@@ -66,12 +47,6 @@ namespace WindowsFormsApp1
             { UpgradeMustard.Enabled = true; };
             if (SausageBank >= Passive1Price)
             { UpgradePassive1.Visible = true; DisplayPassive1Price.Visible = true; UpgradePassive1.Enabled = true; }
-
-            //Save data to a file 
-            var appdata = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            string[] SaveData = { SausageBank.ToString(), KetchupSum.ToString(), KetchupPrice.ToString(), KetchupThousands.ToString(), MustardSum.ToString(), MustardPrice.ToString(), MustardThousands.ToString(), SausagePerSec.ToString(),
-            ClickValue.ToString(), Passive1Price.ToString(), Passive1Thousands.ToString()};
-            System.IO.File.WriteAllLines(@appdata+"\\Testfile.txt", SaveData);
 
             // Write the string to a file.
             //Save = SPS.ToString();
@@ -96,7 +71,7 @@ namespace WindowsFormsApp1
                 DisplayMustardPrice.Visible = true;
                 MustardPerSec.Visible = true;
                 KetchupPerSec.Text = KetchupSum.ToString("0") + " SPS";
-                UpgradeKetchup.Text = "Ketchup x" + KetchupSum; 
+                UpgradeKetchup.Text = "Ketchup x" + KetchupSum;
             }
             if (SausageBank < KetchupPrice)
             {
@@ -204,6 +179,14 @@ namespace WindowsFormsApp1
             {
                 UpgradePassive1.Enabled = false;
             }
+            if (SausageBank < KetchupPrice)
+            {
+                UpgradeKetchup.Enabled = false;
+            }
+            if (SausageBank < MustardPrice)
+            {
+                UpgradeMustard.Enabled = false;
+            }
 
         }
         private void AutoclickSkill_Click(object sender, EventArgs e)
@@ -252,6 +235,35 @@ namespace WindowsFormsApp1
         {
             SecsLeft = SecsLeft -1;
             AutoclickSkill.Text = "Active ON " + SecsLeft;
+        }
+        private void UpgradeKetchup_MouseDown(object sender, MouseEventArgs e)
+        {
+            UpgradeKetchup.Image = WindowsFormsApp2.Properties.Resources.ketchopBig1;
+        }
+
+        private void UpgradeKetchup_MouseUp(object sender, MouseEventArgs e)
+        {
+            UpgradeKetchup.Image = WindowsFormsApp2.Properties.Resources.ketchop;
+        }
+
+        private void ClickSausage_MouseDown(object sender, MouseEventArgs e)
+        {
+            ClickSausage.Image = WindowsFormsApp2.Properties.Resources.sausgeBig;
+        }
+
+        private void ClickSausage_MouseUp(object sender, MouseEventArgs e)
+        {
+            ClickSausage.Image = WindowsFormsApp2.Properties.Resources.sausge;
+        }
+
+        private void UpgradeMustard_MouseDown(object sender, MouseEventArgs e)
+        {
+            UpgradeMustard.Image = WindowsFormsApp2.Properties.Resources.mustardBig;
+        }
+
+        private void UpgradeMustard_MouseUp(object sender, MouseEventArgs e)
+        {
+            UpgradeMustard.Image = WindowsFormsApp2.Properties.Resources.mustard;
         }
     }
 }

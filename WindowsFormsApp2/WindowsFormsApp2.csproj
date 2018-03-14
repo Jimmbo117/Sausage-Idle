@@ -64,8 +64,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Resources\Sausage Idle.resx" />
+    <None Include="Resources\naknakya.resx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,6 +79,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ketchop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ketchopBig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sausge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ketchopBig1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustardBig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sausgeBig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BBQtools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grill1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grill11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

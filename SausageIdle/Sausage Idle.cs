@@ -283,32 +283,32 @@ namespace WindowsFormsApp1
         }
         private void UpgradeKetchup_MouseDown(object sender, MouseEventArgs e)
         {
-            UpgradeKetchup.Image = WindowsFormsApp2.Properties.Resources.ketchopBig1;
+            UpgradeKetchup.Image = WindowsFormsApp2.Properties.Resources.KetchupBig;
         }
 
         private void UpgradeKetchup_MouseUp(object sender, MouseEventArgs e)
         {
-            UpgradeKetchup.Image = WindowsFormsApp2.Properties.Resources.ketchop;
+            UpgradeKetchup.Image = WindowsFormsApp2.Properties.Resources.Ketchup;
         }
 
         private void ClickSausage_MouseDown(object sender, MouseEventArgs e)
         {
-            ClickSausage.Image = WindowsFormsApp2.Properties.Resources.sausgeBig;
+            ClickSausage.Image = WindowsFormsApp2.Properties.Resources.SausageBig;
         }
 
         private void ClickSausage_MouseUp(object sender, MouseEventArgs e)
         {
-            ClickSausage.Image = WindowsFormsApp2.Properties.Resources.sausge;
+            ClickSausage.Image = WindowsFormsApp2.Properties.Resources.Sausage;
         }
 
         private void UpgradeMustard_MouseDown(object sender, MouseEventArgs e)
         {
-            UpgradeMustard.Image = WindowsFormsApp2.Properties.Resources.mustardBig;
+            UpgradeMustard.Image = WindowsFormsApp2.Properties.Resources.MustardBig;
         }
 
         private void UpgradeMustard_MouseUp(object sender, MouseEventArgs e)
         {
-            UpgradeMustard.Image = WindowsFormsApp2.Properties.Resources.mustard;
+            UpgradeMustard.Image = WindowsFormsApp2.Properties.Resources.Mustard;
         }
 
         private void SaveButton_Click(object sender, EventArgs e)

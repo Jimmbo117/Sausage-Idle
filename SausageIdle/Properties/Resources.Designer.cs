@@ -63,9 +63,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BBQtools {
+        internal static System.Drawing.Bitmap BBQTools {
             get {
-                object obj = ResourceManager.GetObject("BBQtools", resourceCulture);
+                object obj = ResourceManager.GetObject("BBQTools", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap grill {
+        internal static System.Drawing.Bitmap Grill {
             get {
-                object obj = ResourceManager.GetObject("grill", resourceCulture);
+                object obj = ResourceManager.GetObject("Grill", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap grill1 {
+        internal static System.Drawing.Bitmap Ketchup {
             get {
-                object obj = ResourceManager.GetObject("grill1", resourceCulture);
+                object obj = ResourceManager.GetObject("Ketchup", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap grill11 {
+        internal static System.Drawing.Bitmap KetchupBig {
             get {
-                object obj = ResourceManager.GetObject("grill11", resourceCulture);
+                object obj = ResourceManager.GetObject("KetchupBig", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ketchop {
+        internal static System.Drawing.Bitmap Mustard {
             get {
-                object obj = ResourceManager.GetObject("ketchop", resourceCulture);
+                object obj = ResourceManager.GetObject("Mustard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ketchopBig {
+        internal static System.Drawing.Bitmap MustardBig {
             get {
-                object obj = ResourceManager.GetObject("ketchopBig", resourceCulture);
+                object obj = ResourceManager.GetObject("MustardBig", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ketchopBig1 {
+        internal static System.Drawing.Bitmap Sausage {
             get {
-                object obj = ResourceManager.GetObject("ketchopBig1", resourceCulture);
+                object obj = ResourceManager.GetObject("Sausage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,39 +133,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap mustard {
+        internal static System.Drawing.Bitmap SausageBig {
             get {
-                object obj = ResourceManager.GetObject("mustard", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap mustardBig {
-            get {
-                object obj = ResourceManager.GetObject("mustardBig", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap sausge {
-            get {
-                object obj = ResourceManager.GetObject("sausge", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap sausgeBig {
-            get {
-                object obj = ResourceManager.GetObject("sausgeBig", resourceCulture);
+                object obj = ResourceManager.GetObject("SausageBig", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

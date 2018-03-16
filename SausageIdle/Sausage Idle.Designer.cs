@@ -57,7 +57,7 @@
             // SausageCounter
             // 
             this.SausageCounter.AutoSize = true;
-            this.SausageCounter.Location = new System.Drawing.Point(109, 207);
+            this.SausageCounter.Location = new System.Drawing.Point(58, 207);
             this.SausageCounter.Name = "SausageCounter";
             this.SausageCounter.Size = new System.Drawing.Size(13, 13);
             this.SausageCounter.TabIndex = 1;
@@ -173,16 +173,18 @@
             // 
             // AutoclickSkill
             // 
+            this.AutoclickSkill.AutoSize = true;
+            this.AutoclickSkill.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.AutoclickSkill.FlatAppearance.BorderSize = 0;
             this.AutoclickSkill.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
             this.AutoclickSkill.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.AutoclickSkill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AutoclickSkill.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AutoclickSkill.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.AutoclickSkill.Image = global::WindowsFormsApp2.Properties.Resources.grill11;
-            this.AutoclickSkill.Location = new System.Drawing.Point(41, 300);
+            this.AutoclickSkill.Image = global::WindowsFormsApp2.Properties.Resources.Grill;
+            this.AutoclickSkill.Location = new System.Drawing.Point(61, 337);
             this.AutoclickSkill.Name = "AutoclickSkill";
-            this.AutoclickSkill.Size = new System.Drawing.Size(139, 140);
+            this.AutoclickSkill.Size = new System.Drawing.Size(118, 131);
             this.AutoclickSkill.TabIndex = 14;
             this.AutoclickSkill.Text = "Active READY";
             this.AutoclickSkill.UseVisualStyleBackColor = true;
@@ -190,14 +192,16 @@
             // 
             // UpgradeBBQTools
             // 
+            this.UpgradeBBQTools.AutoSize = true;
+            this.UpgradeBBQTools.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.UpgradeBBQTools.FlatAppearance.BorderSize = 0;
             this.UpgradeBBQTools.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
             this.UpgradeBBQTools.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.UpgradeBBQTools.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UpgradeBBQTools.Image = global::WindowsFormsApp2.Properties.Resources.BBQtools;
-            this.UpgradeBBQTools.Location = new System.Drawing.Point(335, 344);
+            this.UpgradeBBQTools.Image = global::WindowsFormsApp2.Properties.Resources.BBQTools;
+            this.UpgradeBBQTools.Location = new System.Drawing.Point(336, 350);
             this.UpgradeBBQTools.Name = "UpgradeBBQTools";
-            this.UpgradeBBQTools.Size = new System.Drawing.Size(106, 85);
+            this.UpgradeBBQTools.Size = new System.Drawing.Size(93, 81);
             this.UpgradeBBQTools.TabIndex = 10;
             this.UpgradeBBQTools.Text = "Clicks";
             this.UpgradeBBQTools.UseVisualStyleBackColor = true;
@@ -206,15 +210,17 @@
             // 
             // UpgradeMustard
             // 
+            this.UpgradeMustard.AutoSize = true;
+            this.UpgradeMustard.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.UpgradeMustard.Enabled = false;
             this.UpgradeMustard.FlatAppearance.BorderSize = 0;
             this.UpgradeMustard.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
             this.UpgradeMustard.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.UpgradeMustard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UpgradeMustard.Image = global::WindowsFormsApp2.Properties.Resources.mustard;
-            this.UpgradeMustard.Location = new System.Drawing.Point(335, 180);
+            this.UpgradeMustard.Image = global::WindowsFormsApp2.Properties.Resources.Mustard;
+            this.UpgradeMustard.Location = new System.Drawing.Point(334, 196);
             this.UpgradeMustard.Name = "UpgradeMustard";
-            this.UpgradeMustard.Size = new System.Drawing.Size(75, 139);
+            this.UpgradeMustard.Size = new System.Drawing.Size(55, 106);
             this.UpgradeMustard.TabIndex = 5;
             this.UpgradeMustard.Text = "Mustard";
             this.UpgradeMustard.UseVisualStyleBackColor = true;
@@ -225,16 +231,18 @@
             // 
             // UpgradeKetchup
             // 
+            this.UpgradeKetchup.AutoSize = true;
+            this.UpgradeKetchup.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.UpgradeKetchup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.UpgradeKetchup.Enabled = false;
             this.UpgradeKetchup.FlatAppearance.BorderSize = 0;
             this.UpgradeKetchup.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
             this.UpgradeKetchup.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.UpgradeKetchup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UpgradeKetchup.Image = global::WindowsFormsApp2.Properties.Resources.ketchop;
-            this.UpgradeKetchup.Location = new System.Drawing.Point(335, 12);
+            this.UpgradeKetchup.Image = global::WindowsFormsApp2.Properties.Resources.Ketchup;
+            this.UpgradeKetchup.Location = new System.Drawing.Point(332, 37);
             this.UpgradeKetchup.Name = "UpgradeKetchup";
-            this.UpgradeKetchup.Size = new System.Drawing.Size(75, 130);
+            this.UpgradeKetchup.Size = new System.Drawing.Size(57, 106);
             this.UpgradeKetchup.TabIndex = 2;
             this.UpgradeKetchup.Text = "Ketchup";
             this.UpgradeKetchup.UseVisualStyleBackColor = true;
@@ -244,14 +252,17 @@
             // 
             // ClickSausage
             // 
+            this.ClickSausage.AutoSize = true;
+            this.ClickSausage.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClickSausage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClickSausage.FlatAppearance.BorderSize = 0;
             this.ClickSausage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.ClickSausage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ClickSausage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ClickSausage.Image = global::WindowsFormsApp2.Properties.Resources.sausge;
-            this.ClickSausage.Location = new System.Drawing.Point(22, -2);
+            this.ClickSausage.Image = global::WindowsFormsApp2.Properties.Resources.Sausage;
+            this.ClickSausage.Location = new System.Drawing.Point(24, 12);
             this.ClickSausage.Name = "ClickSausage";
-            this.ClickSausage.Size = new System.Drawing.Size(189, 194);
+            this.ClickSausage.Size = new System.Drawing.Size(156, 156);
             this.ClickSausage.TabIndex = 0;
             this.ClickSausage.UseVisualStyleBackColor = true;
             this.ClickSausage.Click += new System.EventHandler(this.ClickSausage_Click);

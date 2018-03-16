@@ -118,37 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="sausge" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sausge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BBQTools" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BBQTools.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mustard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mustard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Grill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ketchopBig" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ketchopBig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ketchup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ketchup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="grill1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\grill1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="KetchupBig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KetchupBig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BBQtools" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BBQtools.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Mustard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mustard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ketchopBig1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ketchopBig1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MustardBig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MustardBig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mustardBig" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mustardBig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sausage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sausage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sausgeBig" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sausgeBig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="grill" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\grill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ketchop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ketchop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="grill11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\grill11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SausageBig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SausageBig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

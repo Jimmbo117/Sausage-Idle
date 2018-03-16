@@ -50,6 +50,7 @@
             this.UpgradeMustard = new System.Windows.Forms.Button();
             this.UpgradeKetchup = new System.Windows.Forms.Button();
             this.ClickSausage = new System.Windows.Forms.Button();
+            this.SaveButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SausageCounter
@@ -243,8 +244,8 @@
             // ClickSausage
             // 
             this.ClickSausage.FlatAppearance.BorderSize = 0;
-            this.ClickSausage.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.ClickSausage.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.ClickSausage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ClickSausage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ClickSausage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClickSausage.Image = global::WindowsFormsApp2.Properties.Resources.sausge;
             this.ClickSausage.Location = new System.Drawing.Point(22, -2);
@@ -256,12 +257,23 @@
             this.ClickSausage.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ClickSausage_MouseDown);
             this.ClickSausage.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ClickSausage_MouseUp);
             // 
+            // SaveButton
+            // 
+            this.SaveButton.Location = new System.Drawing.Point(253, 168);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(75, 23);
+            this.SaveButton.TabIndex = 15;
+            this.SaveButton.Text = "Save";
+            this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
+            // 
             // SausageIdle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(489, 441);
+            this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.AutoclickSkill);
             this.Controls.Add(this.FixedText2);
             this.Controls.Add(this.DisplayPassive1Price);
@@ -282,6 +294,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SausageIdle";
             this.Text = "Sausage Idle";
+            this.Load += new System.EventHandler(this.SausageIdle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,6 +322,7 @@
         private System.Windows.Forms.Timer TenSecDuration;
         private System.Windows.Forms.Timer AutoclickSecondsLeft;
         private System.Windows.Forms.Label DisplayMustardPrice;
+        private System.Windows.Forms.Button SaveButton;
     }
 }
 

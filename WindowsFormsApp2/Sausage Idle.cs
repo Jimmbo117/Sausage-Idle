@@ -13,28 +13,49 @@ namespace WindowsFormsApp1
     public partial class SausageIdle : Form
     {
         double SausageBank = 0;
-        int KetchupSum = 0;
+        double KetchupSum = 0;
         double KetchupPrice = 10;
         double KetchupThousands = 0;
-        int MustardSum = 0;
+        double MustardSum = 0;
         double MustardPrice = 100;
         double MustardThousands = 0;
         double SausagePerSec = 0;
         double OneThousand = 1000;
-        int ClickValue = 1;
+        double ClickValue = 1;
         double Passive1Price = 1000;
         double Passive1Thousands = 0;
-        int SecsLeft = 0;
+        double SecsLeft = 0;
+        bool SaveExists = false;
         //string Save = "";
 
         public SausageIdle()
         {
             InitializeComponent();
             DisplaySausagesPerSec.Text = "0";
-            DisplayKetchupPrice.Text = KetchupPrice.ToString("0");
-           // FixedText1.Text = UpgradeKetchup.BackColor.ToString();
-           // AutoclickSkill.BackColor = Color.Blue;
+            var appdata = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            SaveExists = (System.IO.File.Exists(appdata + "\\Testfile.txt") ? true : false);
+            if (SaveExists == true)
+            {
+                string[] SaveData = System.IO.File.ReadAllLines(@appdata + "\\Testfile.txt");
+                double[] LoadedData = Array.ConvertAll(SaveData, new Converter<string, double>(Double.Parse));
+                SausageBank = LoadedData[0];
+                KetchupSum = LoadedData[1];
+                KetchupPrice = LoadedData[2];
+                KetchupThousands = LoadedData[3];
+                MustardSum = LoadedData[4];
+                MustardPrice = LoadedData[5];
+                MustardThousands = LoadedData[6];
+                SausagePerSec = LoadedData[7];
+                ClickValue = LoadedData[8];
+                Passive1Price = LoadedData[9];
+                Passive1Thousands = LoadedData[10];
+            }
         }
+            private void SausageIdle_Load(object sender, EventArgs e)
+            {
+
+            }
+        
         private void SausagePlus_Click(object sender, EventArgs e)
         {
             // Gain sausages by clicking, and display output.
@@ -264,6 +285,15 @@ namespace WindowsFormsApp1
         private void UpgradeMustard_MouseUp(object sender, MouseEventArgs e)
         {
             UpgradeMustard.Image = WindowsFormsApp2.Properties.Resources.mustard;
+        }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            //Save data to a file 
+            var appdata = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            string[] SaveData = { SausageBank.ToString(), KetchupSum.ToString(), KetchupPrice.ToString(), KetchupThousands.ToString(), MustardSum.ToString(), MustardPrice.ToString(), MustardThousands.ToString(), SausagePerSec.ToString(),
+            ClickValue.ToString(), Passive1Price.ToString(), Passive1Thousands.ToString()};
+            System.IO.File.WriteAllLines(@appdata + "\\Testfile.txt", SaveData);
         }
     }
 }

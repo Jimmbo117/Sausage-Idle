@@ -234,7 +234,7 @@
             this.UpgradeKetchup.Name = "UpgradeKetchup";
             this.UpgradeKetchup.Size = new System.Drawing.Size(75, 130);
             this.UpgradeKetchup.TabIndex = 2;
-            this.UpgradeKetchup.Text = "Ketchup";
+            this.UpgradeKetchup.Text = "Ketchup 1";
             this.UpgradeKetchup.UseVisualStyleBackColor = true;
             this.UpgradeKetchup.Click += new System.EventHandler(this.Idler_Click);
             this.UpgradeKetchup.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UpgradeKetchup_MouseDown);

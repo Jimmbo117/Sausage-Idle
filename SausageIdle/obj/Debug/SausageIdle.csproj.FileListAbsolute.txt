@@ -8,3 +8,13 @@ C:\Users\Dinchman\Desktop\Jimmygit\Sausage-Idle\SausageIdle\obj\Debug\SausageIdl
 C:\Users\Dinchman\Desktop\Jimmygit\Sausage-Idle\SausageIdle\obj\Debug\SausageIdle.csproj.CoreCompileInputs.cache
 C:\Users\Dinchman\Desktop\Jimmygit\Sausage-Idle\SausageIdle\obj\Debug\WindowsFormsApp2.exe
 C:\Users\Dinchman\Desktop\Jimmygit\Sausage-Idle\SausageIdle\obj\Debug\WindowsFormsApp2.pdb
+D:\sausage Idle\Sausage-Idle-master\SausageIdle\bin\Debug\WindowsFormsApp2.exe.config
+D:\sausage Idle\Sausage-Idle-master\SausageIdle\bin\Debug\WindowsFormsApp2.exe
+D:\sausage Idle\Sausage-Idle-master\SausageIdle\bin\Debug\WindowsFormsApp2.pdb
+D:\sausage Idle\Sausage-Idle-master\SausageIdle\obj\Debug\SausageIdle.csprojResolveAssemblyReference.cache
+D:\sausage Idle\Sausage-Idle-master\SausageIdle\obj\Debug\WindowsFormsApp1.SausageIdle.resources
+D:\sausage Idle\Sausage-Idle-master\SausageIdle\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+D:\sausage Idle\Sausage-Idle-master\SausageIdle\obj\Debug\SausageIdle.csproj.GenerateResource.cache
+D:\sausage Idle\Sausage-Idle-master\SausageIdle\obj\Debug\SausageIdle.csproj.CoreCompileInputs.cache
+D:\sausage Idle\Sausage-Idle-master\SausageIdle\obj\Debug\WindowsFormsApp2.exe
+D:\sausage Idle\Sausage-Idle-master\SausageIdle\obj\Debug\WindowsFormsApp2.pdb

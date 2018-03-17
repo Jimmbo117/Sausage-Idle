@@ -77,7 +77,7 @@ namespace WindowsFormsApp1
                 }
                 IdleMode.Enabled = true;
             }
-            if (SausageBank >= MustardPrice && KetchupSum > 9 || MustardSum > 0)
+            if (SausageBank >= MustardPrice && KetchupSum > 9 || MustardSum > 0 || SausageBank > 199)
             {
                 UpgradeMustard.Visible = true;
                 DisplayMustardPrice.Visible = true;
@@ -116,6 +116,12 @@ namespace WindowsFormsApp1
                 AutoclickSkill.Text = "Grill OFF " + GrillCooldownLeft.ToString();
                 GrillCooldownRemainingTimer.Enabled = true;
             }
+            if (SausageBank > KetchupPrice)
+            { UpgradeKetchup.Enabled = true; }
+            if (SausageBank > MustardPrice)
+            { UpgradeMustard.Enabled = true; }
+            if (SausageBank > BBQPrice)
+            { UpgradeBBQTools.Enabled = true; UpgradeBBQTools.Visible = true; DisplayBBQToolsPrice.Visible = true; }
         }
 
         private void ClickSausage_Click(object sender, EventArgs e)
@@ -364,37 +370,37 @@ namespace WindowsFormsApp1
         //Graphics
         private void UpgradeKetchup_MouseDown(object sender, MouseEventArgs e)
         {
-            if (MousePosition.IsEmpty == false)
-            {
-                UpgradeKetchup.Image = WindowsFormsApp2.Properties.Resources.KetchupBig;
-            }
+            
+            UpgradeKetchup.Image = WindowsFormsApp2.Properties.Resources.KetchupBig;
+            UpgradeKetchup.Location = new Point(520, 65);
+            
         }
         private void UpgradeKetchup_MouseUp(object sender, MouseEventArgs e)
         {
             UpgradeKetchup.Image = WindowsFormsApp2.Properties.Resources.Ketchup;
+            UpgradeKetchup.Location = new Point(520, 73);
         }
         private void ClickSausage_MouseDown(object sender, MouseEventArgs e)
         {
-            {
-                ClickSausage.Image = WindowsFormsApp2.Properties.Resources.SausageBig;
-                ClickSausage.Location = new Point(12, 2);
-            }
+            
+           ClickSausage.Image = WindowsFormsApp2.Properties.Resources.SausageBig;
+           ClickSausage.Location = new Point(112, 71);
+           
         }
         private void ClickSausage_MouseUp(object sender, MouseEventArgs e)
-        {
-            if (MousePosition.IsEmpty == false)
-            {
-                ClickSausage.Image = WindowsFormsApp2.Properties.Resources.Sausage;
-                ClickSausage.Location = new Point(24, 12);
-            }
+        {      
+           ClickSausage.Image = WindowsFormsApp2.Properties.Resources.Sausage;
+           ClickSausage.Location = new Point(124, 81);           
         }
         private void UpgradeMustard_MouseDown(object sender, MouseEventArgs e)
         {
             UpgradeMustard.Image = WindowsFormsApp2.Properties.Resources.MustardBig;
+            UpgradeMustard.Location = new Point(520, 222); 
         }
         private void UpgradeMustard_MouseUp(object sender, MouseEventArgs e)
         {
             UpgradeMustard.Image = WindowsFormsApp2.Properties.Resources.Mustard;
+            UpgradeMustard.Location = new Point(520, 230);
         }
         //End of graphics
 
@@ -498,6 +504,27 @@ namespace WindowsFormsApp1
                 AutoclickSkill.Enabled = true;
                 AutoclickSkill.Text = "Grill READY";
                 GrillCooldownRemainingTimer.Enabled = false;
+            }
+        }
+
+        private void SausageIdle_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult CloseGame = MessageBox.Show("Are you sure you want to close the game?", "Goodbye.", MessageBoxButtons.OKCancel);
+            if (CloseGame == DialogResult.OK)
+            {
+                DialogResult WouldYouLikeToSave = MessageBox.Show("Would you like to save first?", "Save before leaving.", MessageBoxButtons.YesNoCancel);
+                if (WouldYouLikeToSave == DialogResult.Yes)
+                {
+                    SaveGame.PerformClick();
+                }
+                else if (WouldYouLikeToSave == DialogResult.Cancel)
+                {
+                    e.Cancel = true;
+                }
+            }
+            else
+            {
+                e.Cancel = true;
             }
         }
     }

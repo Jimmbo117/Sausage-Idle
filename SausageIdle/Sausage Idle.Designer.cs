@@ -313,24 +313,38 @@
             // 
             // SaveGame
             // 
-            this.SaveGame.Location = new System.Drawing.Point(12, 408);
+            this.SaveGame.BackColor = System.Drawing.Color.Transparent;
+            this.SaveGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.SaveGame.FlatAppearance.BorderSize = 0;
+            this.SaveGame.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.SaveGame.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.SaveGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveGame.ForeColor = System.Drawing.Color.Transparent;
+            this.SaveGame.Image = global::WindowsFormsApp2.Properties.Resources.Save01;
+            this.SaveGame.Location = new System.Drawing.Point(12, 20);
             this.SaveGame.Name = "SaveGame";
-            this.SaveGame.Size = new System.Drawing.Size(75, 23);
+            this.SaveGame.Size = new System.Drawing.Size(93, 41);
             this.SaveGame.TabIndex = 15;
             this.SaveGame.TabStop = false;
-            this.SaveGame.Text = "Save";
-            this.SaveGame.UseVisualStyleBackColor = true;
+            this.SaveGame.Text = "\r\n";
+            this.SaveGame.UseVisualStyleBackColor = false;
             this.SaveGame.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // DeleteGame
             // 
-            this.DeleteGame.Location = new System.Drawing.Point(12, 458);
+            this.DeleteGame.BackColor = System.Drawing.Color.Transparent;
+            this.DeleteGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DeleteGame.FlatAppearance.BorderSize = 0;
+            this.DeleteGame.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.DeleteGame.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.DeleteGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteGame.Image = global::WindowsFormsApp2.Properties.Resources.Delete;
+            this.DeleteGame.Location = new System.Drawing.Point(12, 57);
             this.DeleteGame.Name = "DeleteGame";
-            this.DeleteGame.Size = new System.Drawing.Size(75, 23);
+            this.DeleteGame.Size = new System.Drawing.Size(93, 39);
             this.DeleteGame.TabIndex = 16;
             this.DeleteGame.TabStop = false;
-            this.DeleteGame.Text = "Delete";
-            this.DeleteGame.UseVisualStyleBackColor = true;
+            this.DeleteGame.UseVisualStyleBackColor = false;
             this.DeleteGame.Click += new System.EventHandler(this.DeleteGame_Click);
             // 
             // DisplayGameSaved
